@@ -2,9 +2,9 @@ body {
     display: grid;
     gap: 10px;
     grid-template-areas: 
-        "navi main main"
-        "navi main main"
-        "navi footer footer"
+        "navi navi navi"
+        "main main main"
+        "footer footer footer"
     ;
     background-color: white;
 }

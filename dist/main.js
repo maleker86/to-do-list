@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
@@ -8,6 +7,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -25,9 +25,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
     display: grid;
     gap: 10px;
     grid-template-areas: 
-        "navi main main"
-        "navi main main"
-        "navi footer footer"
+        "navi navi navi"
+        "main main main"
+        "footer footer footer"
     ;
     background-color: white;
 }
@@ -121,7 +121,7 @@ textarea {
     border: 1px solid black;
     padding: 10px;
     scrollbar-gutter: stable both-edges;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,SAAS;IACT;;;;IAIA;IACA,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,aAAa;IACb,wBAAwB;AAC5B;;AAEA;IACI,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,eAAe;IACf,SAAS;IACT,UAAU;AACd;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,oBAAoB;IACpB,qBAAqB;IACrB,aAAa;IACb,QAAQ;IACR,mCAAmC;IACnC,qBAAqB;IACrB,oBAAoB;IACpB,mBAAmB;IACnB,2BAA2B;IAC3B,aAAa;IACb,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,gBAAgB;IAChB,eAAe;AACnB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,wBAAwB;AAC5B;;AAEA;IACI,gBAAgB;IAChB,uBAAuB;IACvB,aAAa;IACb,mCAAmC;AACvC","sourcesContent":["body {\n    display: grid;\n    gap: 10px;\n    grid-template-areas: \n        \"navi main main\"\n        \"navi main main\"\n        \"navi footer footer\"\n    ;\n    background-color: white;\n}\n\n#navigation {\n    grid-area: navi;\n    border: 2px solid green;\n}\n\n#main {\n    grid-area: main;\n    display: flex;\n    border: 2px solid orange;\n}\n\n#footer {\n    grid-area: footer;\n    border: 2px solid purple;\n}\n\nh1, h2, h3 {\n    display: inline;\n    margin: 0;\n    padding: 0;\n}\n\nbutton {\n    width: fit-content;\n}\n\ninput[type=\"radio\"] {\n    display: inline-block;\n}\n\nform {\n    grid-column-start: 2;\n    /* grid-area: main; */\n    display: none;\n    gap: 5px;\n    grid-template-columns: 1fr auto 1fr;\n    justify-items: center;\n    justify-self: center;\n    align-items: center;\n    background-color: lightgray;\n    padding: 10px;\n    z-index: 99999999;\n    /* position: absolute; */\n}\n\nform * {\n    grid-column-start: 2;\n}\n\ntextarea {\n    resize: vertical;\n    max-width: 48vw;\n}\n\n#project {\n    border: 2px solid red;\n}\n\n#task_container {\n    grid-area: main;\n    grid-column-start: 2;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid blue;\n}\n\n#project_container {\n    grid-area: main;\n    grid-column-start: 3;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid yellow;\n}\n\n.task {\n    overflow: scroll;\n    border: 1px solid black;\n    padding: 10px;\n    scrollbar-gutter: stable both-edges;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,SAAS;IACT;;;;IAIA;IACA,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,aAAa;IACb,wBAAwB;AAC5B;;AAEA;IACI,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,eAAe;IACf,SAAS;IACT,UAAU;AACd;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,oBAAoB;IACpB,qBAAqB;IACrB,aAAa;IACb,QAAQ;IACR,mCAAmC;IACnC,qBAAqB;IACrB,oBAAoB;IACpB,mBAAmB;IACnB,2BAA2B;IAC3B,aAAa;IACb,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,gBAAgB;IAChB,eAAe;AACnB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,wBAAwB;AAC5B;;AAEA;IACI,gBAAgB;IAChB,uBAAuB;IACvB,aAAa;IACb,mCAAmC;AACvC","sourcesContent":["body {\n    display: grid;\n    gap: 10px;\n    grid-template-areas: \n        \"navi navi navi\"\n        \"main main main\"\n        \"footer footer footer\"\n    ;\n    background-color: white;\n}\n\n#navigation {\n    grid-area: navi;\n    border: 2px solid green;\n}\n\n#main {\n    grid-area: main;\n    display: flex;\n    border: 2px solid orange;\n}\n\n#footer {\n    grid-area: footer;\n    border: 2px solid purple;\n}\n\nh1, h2, h3 {\n    display: inline;\n    margin: 0;\n    padding: 0;\n}\n\nbutton {\n    width: fit-content;\n}\n\ninput[type=\"radio\"] {\n    display: inline-block;\n}\n\nform {\n    grid-column-start: 2;\n    /* grid-area: main; */\n    display: none;\n    gap: 5px;\n    grid-template-columns: 1fr auto 1fr;\n    justify-items: center;\n    justify-self: center;\n    align-items: center;\n    background-color: lightgray;\n    padding: 10px;\n    z-index: 99999999;\n    /* position: absolute; */\n}\n\nform * {\n    grid-column-start: 2;\n}\n\ntextarea {\n    resize: vertical;\n    max-width: 48vw;\n}\n\n#project {\n    border: 2px solid red;\n}\n\n#task_container {\n    grid-area: main;\n    grid-column-start: 2;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid blue;\n}\n\n#project_container {\n    grid-area: main;\n    grid-column-start: 3;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid yellow;\n}\n\n.task {\n    overflow: scroll;\n    border: 1px solid black;\n    padding: 10px;\n    scrollbar-gutter: stable both-edges;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -134,6 +134,7 @@ textarea {
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -228,6 +229,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -253,6 +255,7 @@ module.exports = function (item) {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -307,6 +310,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -400,6 +404,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -443,6 +448,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -462,6 +468,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -481,6 +488,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -551,6 +559,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -568,354 +577,49 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/controller.js":
-/*!***************************!*\
-  !*** ./src/controller.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   TaskManager: () => (/* binding */ TaskManager)
-/* harmony export */ });
-/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.js */ "./src/index.js");
-/* harmony import */ var _storage_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./storage.js */ "./src/storage.js");
-
-
-
-
-
-function TaskManager() {
-
-const title = document.getElementById("task_title");
-const desc = document.getElementById("desc");
-const due = document.getElementById("due");
-const priority = document.getElementById("priority");
-
-  _task_js__WEBPACK_IMPORTED_MODULE_0__.tasks.create(title.value,desc.value,due.value,priority.value);
-  _task_js__WEBPACK_IMPORTED_MODULE_0__.tasks.push();
-
-  console.log(_storage_js__WEBPACK_IMPORTED_MODULE_2__.task_list)
-  // let task_title = task_list[0].title;
-
-  if (task_title == "") {
-    titleBlankError();
-    return;
-  } 
-
-    let title_box = document.getElementById("task_title");
-    title_box.style.border = "none";
-
-  // createTask.push;
-  // createTask.hello;
-  (0,_index_js__WEBPACK_IMPORTED_MODULE_1__.displaySingleTask)("task_container");
-  (0,_index_js__WEBPACK_IMPORTED_MODULE_1__.TaskFormToggle)();
-}
-
-function titleBlankError() {
-  let title_box = document.getElementById("task_title");
-  title_box.style.border = "2px solid red";
-    console.log("Please add a title to continue!");
-    _storage_js__WEBPACK_IMPORTED_MODULE_2__.task_list.shift();
-    console.log("We removed your last task attempt. this task list is now ",_storage_js__WEBPACK_IMPORTED_MODULE_2__.task_list);
-}
-
-// function displayTaskList() {
-//   console.log("Success! this task list is ", task_list);
-//   // console.log("The task title is ", task_title);
-
-//   for (let i = 0; i < task_list.length; i++) {
-//     let task = document.createElement("div");
-//     console.log(task_list[i]);
-
-//   }
-// }
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   TaskFormToggle: () => (/* binding */ TaskFormToggle),
-/* harmony export */   displaySingleTask: () => (/* binding */ displaySingleTask)
-/* harmony export */ });
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
-/* harmony import */ var _controller_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./controller.js */ "./src/controller.js");
-
-
-
-
-//declare default page!
-const navigation = document.getElementById("navigation");
-const main = document.createElement("div");
-const footer = document.createElement("div");
-
-let task_button = document.createElement("button");
-
-// document.body.append(navigation);
-// document.body.append(main);
-// document.body.append(footer);
-// navigation.setAttribute("id", "navigation");
-// main.setAttribute("id", "main");
-// footer.setAttribute("id", "footer");
-
-navigation.append(task_button);
-task_button.addEventListener("click", TaskFormToggle);
-task_button.setAttribute("grid-area", "navigation");
-task_button.innerText = "Add Task";
-
-// //make task & project holder on main section
-// let task_container = document.createElement("div");
-// let project_container = document.createElement("div");
-
-// task_container.setAttribute("id", "task_container");
-// project_container.setAttribute("id", "project_container");
-
-// main.append(task_container,project_container);
-
-//create Form
-const form = document.createElement("form");
-const field_set = document.createElement("fieldset");
-const field_legend = document.createElement("legend");
-let h1 = document.createElement("h1");
-
-document.body.prepend(form);
-form.style.display = "grid";
-form.prepend(h1);
-h1.innerText = "New Task:";
-form.setAttribute("id", "task_form");
-
-//make invisible
-form.style.display = "none";
-
-// create fieldsets
-function createFormElement(
-  item_id,
-  name,
-  label_text,
-  element_tag,
-  element_type,
-) {
-  const field_label = document.createElement("label");
-  const element_itself = document.createElement(element_tag);
-
-  form.appendChild(field_label);
-  form.appendChild(element_itself);
-
-  element_itself.setAttribute("id", item_id);
-  element_itself.setAttribute("name", name);
-  element_itself.setAttribute("label", label_text);
-  field_label.innerText = "\n" + label_text;
-  element_itself.setAttribute("type", element_type);
-}
-
-//create the task form elements!
-createFormElement("task_title", "title_input", "Title:", "input", "text");
-createFormElement("desc", "description_input", "Description:", "textarea");
-createFormElement("due", "due_date_input", "Due Date:", "input", "date");
-createFormElement(
-  "priority",
-  "priority_number_input",
-  "Priority:",
-  "input",
-  "number",
-);
-// optional elements for post-completion: notes, checklist
-
-//define any stragglers for the constructor above
-const priority = document.getElementById("priority");
-let priority_min = 1;
-let priority_max = 3;
-priority.setAttribute("min", priority_min);
-priority.setAttribute("max", priority_max);
-
-//create task form submit button
-let button = document.createElement("button");
-button.setAttribute("type", "button");
-
-//add completed form
-form.appendChild(button);
-
-//make form submit button
-button.innerText = "Submit the info!";
-button.style.width = "flex-self";
-button.addEventListener("click", () => {
-  (0,_controller_js__WEBPACK_IMPORTED_MODULE_2__.TaskManager)();
-  clearInputFields();
-});
-
-function clearInputFields() {
-  let title = document.getElementById("task_title");
-  let desc = document.getElementById("desc");
-  let priority = document.getElementById("priority");
-  let due = document.getElementById("due");
-
-  title.value = "";
-  desc.value = "";
-  priority.value = "";
-  due.value = "";
-}
-
-function TaskFormToggle() {
-  let form = document.getElementById("task_form");
-
-  if (form.style.display == "none") {
-    form.style.display = "grid";
-  } else {
-    form.style.display = "none";
-  }
-}
-
-function displaySingleTask(destinationID) {
-  // console.log("the due date is", task_list[0].due_date);
-  // title_box.style.border = "none";
-
-  let container = document.getElementById(destinationID);
-
-  container.innerHTML = "";
-
-  for (let i = 0; i < task_list.length; i++) {
-    let task_box = document.createElement("div");
-    task_box.setAttribute("class", "task");
-
-    console.log("We are printing object ", i + 1);
-    // console.log("the item is ", task_list[i]);
-
-    console.log("the items in the list are: ", task_list[i]);
-    // console.log(task_list[i].title);
-    // console.log(task_list[i].description);
-    // console.log(task_list[i].priority);
-    // console.log(task_list[i].due_date);
-    let shortcut = task_list[i];
-
-    console.log(shortcut);
-
-    if (
-      shortcut.description == shortcut.priority &&
-      shortcut.priority == shortcut.due_date
-    ) {
-      console.log("There is only a title");
-      let h3 = document.createElement("h3");
-      let checkbox = document.createElement("input");
-      checkbox.setAttribute("type", "checkbox");
-
-      container.append(task_box);
-      task_box.append(checkbox);
-      task_box.append(h3);
-      h3.innerText = shortcut.title;
-    } else {
-      console.log("There is a title & others");
-      let details = document.createElement("details");
-      let summary = document.createElement("summary");
-      let h3 = document.createElement("h3");
-
-      let non_titles = [
-        shortcut.description,
-        shortcut.priority,
-        shortcut.due_date,
-      ];
-
-      non_titles.forEach(function (non) {
-        let p = document.createElement("p");
-        p.innerText = non;
-        details.append(p);
-      });
-
-      let checkbox = document.createElement("input");
-      checkbox.setAttribute("type", "checkbox");
-
-      container.append(task_box);
-      task_box.append(details);
-      details.append(summary);
-      summary.append(checkbox);
-      summary.append(h3);
-      h3.innerText = shortcut.title;
-    }
-  }
-}
-
-
-/***/ }),
-
 /***/ "./src/storage.js":
 /*!************************!*\
   !*** ./src/storage.js ***!
   \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   hello: () => (/* binding */ hello),
-/* harmony export */   task_list: () => (/* binding */ task_list)
-/* harmony export */ });
-let task_list = [];
-const hello = () => { console.log("Storage says hi")}
-
-/***/ }),
-
-/***/ "./src/task.js":
-/*!*********************!*\
-  !*** ./src/task.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _storage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./storage.js */ "./src/storage.js");
-
-
-const tasks  = (function () {
-
-  //define it
-  function Task(title, desc, due, priority) {
-    this.title = title;
-    this.description = desc;
-    this.due_date = due;
-    this.priority = priority;
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
   }
 
-  const create = () => {
-    let task = new Task(title, desc, due, priority);
-    return task;
+  function Project(title) {
+        this.projectTitle = title;
+        this.tasks = [];
+  };
+
+  function Task(title,description) {
+        this.taskTitle = title;
+        this.taskDescription = description;
   }
 
-
-  const push = () => {
-    _storage_js__WEBPACK_IMPORTED_MODULE_0__.task_list.unshift(create);
-    (0,_storage_js__WEBPACK_IMPORTED_MODULE_0__.hello)();
+  function addTask(task,project) {
+    this.task = task;
+    this.project = project;
+    console.log("we want to add: ",task);
+    console.log("maybe the task array is: ",project.tasks);
+    project.tasks.push(task);
   }
 
-  return {
-    create,
-    push,
-  }
-});
+  let project1 = new Project("First project");
+  let task1 = new Task("Task1","more words");
+  let task2 = new Task("Task2","lets get some words");
 
-console.log("The type of tasks is:")
-console.log(typeof tasks);
+  console.log("before: ", project1);
+  console.log("to add: ", task1);
 
-//learning 
-function PrintHandler() {
-  let shout = () => console.log("I am shouting");
-  let whisper = () => console.log("I am whispering");
-  return {
-  shout,
-  whisper,
-};
-}
-PrintHandler().shout() 
+  addTask(task1,project1);
+  addTask(task2,project1);
 
+  console.log("results in: ",project1);
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tasks);
 
 /***/ })
 
@@ -992,12 +696,21 @@ PrintHandler().shout()
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _storage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./storage.js */ "./src/storage.js");
+/* harmony import */ var _storage_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_storage_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
