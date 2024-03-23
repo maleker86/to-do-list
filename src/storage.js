@@ -30,6 +30,7 @@ function Person(first, last, age, eye) {
 //   obj[prop1] = "value 1";
 //   console.log(obj);
 //   // {"name": "Ben", "prop name": "value 1", [...]}
+// also. git checkout . is when you want to not commit ANY of the changes & it trashes them.
 
   function editTask(taskName,property,new_data) {
     // this.taskName = taskName;
