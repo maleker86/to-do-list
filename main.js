@@ -584,7 +584,6 @@ module.exports = styleTagTransform;
 /***/ (() => {
 
 let project_arr = [];
-let task_arr = [];
 
 function Project(title) {
   this.projectTitle = title;
@@ -600,8 +599,6 @@ function Task(title, description) {
 function addTaskToProject(task, project) {
   this.project = project_arr.find((item) => item.projectTitle === project);
 
-  // console.log("the project this will be added to is: ", this.project);
-  // console.log("we are adding ", task, "to ", this.project);
   this.project.tasks.push(task);
 }
 
@@ -705,8 +702,6 @@ completeTask("Project2", "Task2");
 completeTask("Project2", "Task2");
 
 deleteTask("Project2","Task1")
-
-// console.log(project_arr)
 
 //----- notes --------------------------
 //   thank you sentry https://sentry.io/answers/how-can-i-add-a-key-value-pair-to-a-javascript-object/
