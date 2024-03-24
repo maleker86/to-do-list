@@ -54,13 +54,9 @@ function createTask(project, title, description) {
 
 function completeTask(projectName,taskName) {
   let project = project_arr.find(
-    (proj_item) => proj_item.projectTitle === projectName
-  );
+    (proj_item) => proj_item.projectTitle === projectName);
   let task = project.tasks.find(
-    (task_item) => task_item.taskTitle === taskName
-  );
-
-  // console.log(project,task);
+    (task_item) => task_item.taskTitle === taskName);
 
   (function checkCompleted() {
     if (task.completed === true) {
@@ -70,9 +66,9 @@ function completeTask(projectName,taskName) {
     }
   })();
 
-  editTask("Project1","Task1","completed",completed);
+  editTask(projectName,taskName,"completed",completed);
 
-  // console.log(project,task);
+  console.log("The task",task.taskTitle, "in",project.projectTitle, "is",task.completed);
 
 }
 
@@ -81,17 +77,20 @@ createProject("Project2", "these are words");
 
 createTask("Project1", "Task1", "description 1");
 createTask("Project1", "Task2", "description 2 that's longer");
-createTask("Project2", "Task2", null);
-
-console.log(project_arr);
+createTask("Project2", "Task1", null);
+createTask("Project2", "Task2","necessary?");
 
 editTask("Project1", "Task1", "priority", "high");
 editTask("Project1", "Task2", "testing", 100);
-editTask("Project2", "Task2", "due_date", "12/24/2024");
-editTask("Project2", "Task2", "testing", 100);
+editTask("Project2", "Task1", "due_date", "12/24/2024");
+editTask("Project2", "Task1", "testing", 100);
 
 completeTask("Project1", "Task1");
-completeTask("Project1", "Task1");
+completeTask("Project2", "Task1");
+completeTask("Project2", "Task2");
+completeTask("Project2", "Task2");
+
+console.log(project_arr)
 
 //----- notes --------------------------
 //   thank you sentry https://sentry.io/answers/how-can-i-add-a-key-value-pair-to-a-javascript-object/
