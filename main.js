@@ -657,6 +657,35 @@ function completeTask(projectName,taskName) {
 
 }
 
+function deleteTask(projectName,taskName) {
+  let project = project_arr.find(
+    (proj_item) => proj_item.projectTitle === projectName);
+  let task = project.tasks.find(
+    (task_item) => task_item.taskTitle === taskName);
+
+    console.log(project);
+    console.log(task);
+
+    if (confirm("Do you want to delete entire selected project?") == true) {
+      delete project_arr[project_arr.indexOf(project)];
+      console.log("we removed",project,"from",project_arr);
+      console.log(project_arr);
+    } else {
+      console.log("we cancelled the project deletion");
+      console.log(project_arr);
+    }
+
+    if (confirm("Do you want to delete entire selected task?") == true) {
+      delete project.tasks[project.tasks.indexOf(task)];
+      console.log("we removed",task,"from",project);
+      console.log(project);
+    } else {
+      console.log("we cancelled the task deletion");
+      console.log(project);
+    }
+    
+}
+
 createProject("Project1");
 createProject("Project2", "these are words");
 
@@ -675,7 +704,9 @@ completeTask("Project2", "Task1");
 completeTask("Project2", "Task2");
 completeTask("Project2", "Task2");
 
-console.log(project_arr)
+deleteTask("Project2","Task1")
+
+// console.log(project_arr)
 
 //----- notes --------------------------
 //   thank you sentry https://sentry.io/answers/how-can-i-add-a-key-value-pair-to-a-javascript-object/
