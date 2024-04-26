@@ -55,6 +55,8 @@ function completeTask(projectName,taskName) {
   let task = project.tasks.find(
     (task_item) => task_item.taskTitle === taskName);
 
+    let toggle;
+
   // (function checkCompleted() {
   //   if (task.completed === true) {
   //     completed = false;
@@ -63,15 +65,16 @@ function completeTask(projectName,taskName) {
   //   }
   // })();
     if (task.completed === true) {
-      completed = false;
+      console.log("task had been complete");
+      toggle = false;
     } else {
-      completed = true;
+      console.log("task had not been complete");
+      toggle = true;
     };
 
-  editTask(projectName,taskName,"completed",completed);
+  editTask(projectName,taskName,"completed",toggle);
 
-  console.log("The task",task.taskTitle, "in",project.projectTitle, "is",task.completed);
-
+  console.log("The task",task.taskTitle, "in",project.projectTitle, "is completed is",task.completed);
 }
 
 function deleteTask(projectName,taskName) {
@@ -119,10 +122,11 @@ editTask("Project2", "Task1", "due_date", "12/24/2024");
 editTask("Project2", "Task1", "testing", 100);
 editTask("Project 3","Code More","due_date","tomorrow");
 
-// completeTask("Project1", "Task1");
+completeTask("Project1", "Task1");
 // completeTask("Project2", "Task1");
-// completeTask("Project2", "Task2");
-// completeTask("Project2", "Task2");
+completeTask("Project2", "Task2");
+completeTask("Project2", "Task2");
+completeTask("Project 3","Code More");
 
 // deleteTask("Project2","Task1")
 
