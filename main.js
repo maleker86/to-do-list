@@ -597,13 +597,13 @@ function Task(title, description) {
 }
 
 function addTaskToProject(task, project) {
-  this.project = project_arr.find((item) => item.projectTitle === project);
+  project = project_arr.find((item) => item.projectTitle === project);
 
-  this.project.tasks.push(task);
+  project.tasks.push(task);
 }
 
 function addProjectToList(project) {
-  this.project = project;
+  project = project;
   project_arr.push(project);
 }
 
