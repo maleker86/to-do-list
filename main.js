@@ -640,13 +640,18 @@ function completeTask(projectName,taskName) {
   let task = project.tasks.find(
     (task_item) => task_item.taskTitle === taskName);
 
-  (function checkCompleted() {
+  // (function checkCompleted() {
+  //   if (task.completed === true) {
+  //     completed = false;
+  //   } else {
+  //     completed = true;
+  //   }
+  // })();
     if (task.completed === true) {
       completed = false;
     } else {
       completed = true;
-    }
-  })();
+    };
 
   editTask(projectName,taskName,"completed",completed);
 
