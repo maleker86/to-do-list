@@ -105,23 +105,32 @@ function deleteTask(projectName,taskName) {
 
 createProject("Project1");
 createProject("Project2", "these are words");
+createProject("Project 3");
 
 createTask("Project1", "Task1", "description 1");
 createTask("Project1", "Task2", "description 2 that's longer");
 createTask("Project2", "Task1", null);
 createTask("Project2", "Task2","necessary?");
+createTask("Project 3","Code More","Lorem ipsum why don't i have the emmett shortcut to create sooo many words")
 
 editTask("Project1", "Task1", "priority", "high");
 editTask("Project1", "Task2", "testing", 100);
 editTask("Project2", "Task1", "due_date", "12/24/2024");
 editTask("Project2", "Task1", "testing", 100);
+editTask("Project 3","Code More","due_date","tomorrow");
 
-completeTask("Project1", "Task1");
-completeTask("Project2", "Task1");
-completeTask("Project2", "Task2");
-completeTask("Project2", "Task2");
+// completeTask("Project1", "Task1");
+// completeTask("Project2", "Task1");
+// completeTask("Project2", "Task2");
+// completeTask("Project2", "Task2");
 
-deleteTask("Project2","Task1")
+// deleteTask("Project2","Task1")
+
+console.log(project_arr);
+
+export {
+  project_arr,
+}
 
 //----- notes --------------------------
 //   thank you sentry https://sentry.io/answers/how-can-i-add-a-key-value-pair-to-a-javascript-object/

@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
@@ -7,7 +8,6 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -90,7 +90,7 @@ textarea {
     border: 2px solid red;
 }
 
-#task_container {
+/* #task_container {
     grid-area: main;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -101,9 +101,9 @@ textarea {
     justify-content: space-evenly;
     align-items: baseline;
     border: 2px solid blue;
-}
+} */
 
-#project_container {
+.project_container {
     grid-area: main;
     grid-column-start: 3;
     grid-row-start: 1;
@@ -113,7 +113,7 @@ textarea {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: baseline;
-    border: 2px solid yellow;
+    border: 2px solid blue;
 }
 
 .task {
@@ -121,7 +121,7 @@ textarea {
     border: 1px solid black;
     padding: 10px;
     scrollbar-gutter: stable both-edges;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,SAAS;IACT;;;;IAIA;IACA,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,aAAa;IACb,wBAAwB;AAC5B;;AAEA;IACI,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,eAAe;IACf,SAAS;IACT,UAAU;AACd;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,oBAAoB;IACpB,qBAAqB;IACrB,aAAa;IACb,QAAQ;IACR,mCAAmC;IACnC,qBAAqB;IACrB,oBAAoB;IACpB,mBAAmB;IACnB,2BAA2B;IAC3B,aAAa;IACb,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,gBAAgB;IAChB,eAAe;AACnB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,wBAAwB;AAC5B;;AAEA;IACI,gBAAgB;IAChB,uBAAuB;IACvB,aAAa;IACb,mCAAmC;AACvC","sourcesContent":["body {\n    display: grid;\n    gap: 10px;\n    grid-template-areas: \n        \"navi navi navi\"\n        \"main main main\"\n        \"footer footer footer\"\n    ;\n    background-color: white;\n}\n\n#navigation {\n    grid-area: navi;\n    border: 2px solid green;\n}\n\n#main {\n    grid-area: main;\n    display: flex;\n    border: 2px solid orange;\n}\n\n#footer {\n    grid-area: footer;\n    border: 2px solid purple;\n}\n\nh1, h2, h3 {\n    display: inline;\n    margin: 0;\n    padding: 0;\n}\n\nbutton {\n    width: fit-content;\n}\n\ninput[type=\"radio\"] {\n    display: inline-block;\n}\n\nform {\n    grid-column-start: 2;\n    /* grid-area: main; */\n    display: none;\n    gap: 5px;\n    grid-template-columns: 1fr auto 1fr;\n    justify-items: center;\n    justify-self: center;\n    align-items: center;\n    background-color: lightgray;\n    padding: 10px;\n    z-index: 99999999;\n    /* position: absolute; */\n}\n\nform * {\n    grid-column-start: 2;\n}\n\ntextarea {\n    resize: vertical;\n    max-width: 48vw;\n}\n\n#project {\n    border: 2px solid red;\n}\n\n#task_container {\n    grid-area: main;\n    grid-column-start: 2;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid blue;\n}\n\n#project_container {\n    grid-area: main;\n    grid-column-start: 3;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid yellow;\n}\n\n.task {\n    overflow: scroll;\n    border: 1px solid black;\n    padding: 10px;\n    scrollbar-gutter: stable both-edges;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,SAAS;IACT;;;;IAIA;IACA,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,aAAa;IACb,wBAAwB;AAC5B;;AAEA;IACI,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,eAAe;IACf,SAAS;IACT,UAAU;AACd;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,oBAAoB;IACpB,qBAAqB;IACrB,aAAa;IACb,QAAQ;IACR,mCAAmC;IACnC,qBAAqB;IACrB,oBAAoB;IACpB,mBAAmB;IACnB,2BAA2B;IAC3B,aAAa;IACb,iBAAiB;IACjB,wBAAwB;AAC5B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,gBAAgB;IAChB,eAAe;AACnB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;;;;;;;;;;;GAWG;;AAEH;IACI,eAAe;IACf,oBAAoB;IACpB,iBAAiB;IACjB,SAAS;IACT,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,uBAAuB;IACvB,aAAa;IACb,mCAAmC;AACvC","sourcesContent":["body {\n    display: grid;\n    gap: 10px;\n    grid-template-areas: \n        \"navi navi navi\"\n        \"main main main\"\n        \"footer footer footer\"\n    ;\n    background-color: white;\n}\n\n#navigation {\n    grid-area: navi;\n    border: 2px solid green;\n}\n\n#main {\n    grid-area: main;\n    display: flex;\n    border: 2px solid orange;\n}\n\n#footer {\n    grid-area: footer;\n    border: 2px solid purple;\n}\n\nh1, h2, h3 {\n    display: inline;\n    margin: 0;\n    padding: 0;\n}\n\nbutton {\n    width: fit-content;\n}\n\ninput[type=\"radio\"] {\n    display: inline-block;\n}\n\nform {\n    grid-column-start: 2;\n    /* grid-area: main; */\n    display: none;\n    gap: 5px;\n    grid-template-columns: 1fr auto 1fr;\n    justify-items: center;\n    justify-self: center;\n    align-items: center;\n    background-color: lightgray;\n    padding: 10px;\n    z-index: 99999999;\n    /* position: absolute; */\n}\n\nform * {\n    grid-column-start: 2;\n}\n\ntextarea {\n    resize: vertical;\n    max-width: 48vw;\n}\n\n#project {\n    border: 2px solid red;\n}\n\n/* #task_container {\n    grid-area: main;\n    grid-column-start: 2;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid blue;\n} */\n\n.project_container {\n    grid-area: main;\n    grid-column-start: 3;\n    grid-row-start: 1;\n    gap: 10px;\n    padding: 10px;\n    display: flex;\n    flex-flow: row wrap;\n    justify-content: space-evenly;\n    align-items: baseline;\n    border: 2px solid blue;\n}\n\n.task {\n    overflow: scroll;\n    border: 1px solid black;\n    padding: 10px;\n    scrollbar-gutter: stable both-edges;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -134,7 +134,6 @@ textarea {
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -229,7 +228,6 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -255,7 +253,6 @@ module.exports = function (item) {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -310,7 +307,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -404,7 +400,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -448,7 +443,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -468,7 +462,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -488,7 +481,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -559,7 +551,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -581,8 +572,12 @@ module.exports = styleTagTransform;
 /*!************************!*\
   !*** ./src/storage.js ***!
   \************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   project_arr: () => (/* binding */ project_arr)
+/* harmony export */ });
 let project_arr = [];
 
 function Project(title) {
@@ -690,23 +685,30 @@ function deleteTask(projectName,taskName) {
 
 createProject("Project1");
 createProject("Project2", "these are words");
+createProject("Project 3");
 
 createTask("Project1", "Task1", "description 1");
 createTask("Project1", "Task2", "description 2 that's longer");
 createTask("Project2", "Task1", null);
 createTask("Project2", "Task2","necessary?");
+createTask("Project 3","Code More","Lorem ipsum why don't i have the emmett shortcut to create sooo many words")
 
 editTask("Project1", "Task1", "priority", "high");
 editTask("Project1", "Task2", "testing", 100);
 editTask("Project2", "Task1", "due_date", "12/24/2024");
 editTask("Project2", "Task1", "testing", 100);
+editTask("Project 3","Code More","due_date","tomorrow");
 
-completeTask("Project1", "Task1");
-completeTask("Project2", "Task1");
-completeTask("Project2", "Task2");
-completeTask("Project2", "Task2");
+// completeTask("Project1", "Task1");
+// completeTask("Project2", "Task1");
+// completeTask("Project2", "Task2");
+// completeTask("Project2", "Task2");
 
-deleteTask("Project2","Task1")
+// deleteTask("Project2","Task1")
+
+console.log(project_arr);
+
+
 
 //----- notes --------------------------
 //   thank you sentry https://sentry.io/answers/how-can-i-add-a-key-value-pair-to-a-javascript-object/
@@ -796,18 +798,72 @@ deleteTask("Project2","Task1")
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _storage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./storage.js */ "./src/storage.js");
-/* harmony import */ var _storage_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_storage_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
+
+let main = document.getElementById("main");
+
+_storage_js__WEBPACK_IMPORTED_MODULE_1__.project_arr.forEach(project => {
+    let div = document.createElement("div");
+    let h2 = document.createElement("h2");
+    main.append(div);
+    div.setAttribute("class","project_container");
+    div.append(h2);
+
+    h2.innerText = project.projectTitle;
+
+    let tasks = project.tasks;
+
+    // for (const [key, value] of Object.entries(tasks)) {
+    //     let ul = document.createElement("ul");
+    //     div.append(ul);
+    //     ul.textContent = (`${key}: ${value}`);
+    //   }
+
+    tasks.forEach(task => {
+        let ul = document.createElement("ul");
+        div.append(ul);
+
+        // ul.innerText = Object.entries(task);
+
+        for (let [key, value] of Object.entries(task)) {
+            let li = document.createElement("li");
+            ul.append(li);
+            li.innerText = `${key}: ${value}`;
+        }
+
+        // let keys = Object.keys(task);
+        // let values = Object.values(task);
+
+            // for (let i = 0; i < keys.length; i++) {
+            //     let p = document.createElement("p");
+            //     ul.append(p);
+            //     p.innerText = keys[i];
+            // }
+
+            // for (let i = 0; i < values.length; i++) {
+            //     let p = document.createElement("p");
+            //     ul.append(p);
+            //     p.innerText = values[i];
+            // }
+
+        // ul.innerText = `we have ${keys} and ${values}`;
+
+        // task.forEach(item => {
+        //     let p = document.createElement("p");
+        //     ul.append(p);
+        //     p.innerText = item;
+        // })
+    })
+});
 })();
 
 /******/ })()
